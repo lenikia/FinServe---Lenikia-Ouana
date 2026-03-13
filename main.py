@@ -1,24 +1,17 @@
-from pathlib import Path
+from app.parser import load_text_file
 from app.extractor import extract_loan_application_data
-import json
+from app.utils import save_json, print_extracted_data
 
 
 def main():
+    input_path = "data/sample_application.txt"
+    output_path = "outputs/extracted_application.json"
 
-    input_file = Path("data/sample_application.txt")
-
-    text = input_file.read_text(encoding="utf-8")
-
+    text = load_text_file(input_path)
     extracted_data = extract_loan_application_data(text)
 
-    print("Extracted Data:")
-    print(extracted_data)
-
-    output_file = Path("outputs/extracted_application.json")
-    output_file.parent.mkdir(exist_ok=True)
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(extracted_data, f, indent=4, ensure_ascii=False)
+    print_extracted_data(extracted_data)
+    save_json(extracted_data, output_path)
 
 
 if __name__ == "__main__":
