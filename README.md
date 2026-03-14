@@ -25,22 +25,33 @@ The goal is to demonstrate how FinServe could reduce manual data entry by automa
 - Streamlit for the user interface
 
 ## How to Run the Project
-How to Run the Project
 
 1. Clone the repository
+```bash
 git clone <https://github.com/lenikia/FinServe---Lenikia-Ouana.git>
+````
 
 2. Navigate to the project folder
+```bash
 cd FinServe---Lenikia-Ouana
+```
 
-4. Create a virtual environment
+3. Create a virtual environment
+```bash
 python -m venv venv
+```
 
-5. Activate the environment
+4. Activate the environment
+```bash
 venv\Scripts\activate
+```
 
-6. Install dependencies
+5. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-7. Run the application
+6. Run the application
+```bash
 streamlit run streamlit_app.py
+```
