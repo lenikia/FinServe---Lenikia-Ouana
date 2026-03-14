@@ -28,7 +28,7 @@ The goal is to demonstrate how FinServe could reduce manual data entry by automa
 
 1. Clone the repository
 ```bash
-git clone <https://github.com/lenikia/FinServe---Lenikia-Ouana.git>
+git clone https://github.com/lenikia/FinServe---Lenikia-Ouana.git
 ````
 
 2. Navigate to the project folder
