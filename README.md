@@ -28,6 +28,9 @@ The goal is to demonstrate how FinServe could reduce manual data entry by automa
 
 1. Clone the repository
 
+git clone https://github.com/lenikia/FinServe---Lenikia-Ouana.git
+cd FinServe---Lenikia-Ouana
+
 2. Install dependencies
 
 pip install -r requirements.txt
